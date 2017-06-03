@@ -46,7 +46,7 @@
 						<div class="collapse navbar-collapse " id="navbar">
 							<ul class="nav navbar-nav js-nav-add-active-class">
 								<li><a href="/index.html">Home</a></li>
-								<li class="active"><a href="#aboutus">About Us</a></li>
+								<li><a href="#aboutus">About Us</a></li>
 								<li><a href="#authors">Authors</a></li>
 								<li><a href="#editors">Editors</a></li>
 								<li><a href="#contactus">Contact Us</a></li>
@@ -67,40 +67,151 @@
 	
 	</header>
 		
+		
+		
+<div id="login-modal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">×</button>
+<h4 class="modal-title">LOGIN</h4>
+</div>
+<div class="modal-body">
+<p>Don't have an account?<span style="color:blue;"> Register</span></p>
+<p><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></p>
+<p><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></p>
+
+<div class="form-group">
+<label for="role" class="col-sm-2 control-label">Role</label>
+<div class="col-sm-10">
+<label class="radio-inline">
+<input type="radio" name="role" value="Author">Author <br>
+</label>
+<label class="radio-inline">
+<input type="radio" name="role" value="Publisher">Publisher <br>
+</label>
+<label class="radio-inline">
+<input type="radio" name="role" value="Editor">Editor <br>
+</label>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-primary">Login</button>
+<span style="color:blue;">Forgot Password?</span>
+</div>
+
+</div>
+</div>
+</div>	
+		
+
+		
+		
+		
+		<!--
 	
 	<div class="modal fade" id="login-modal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     	<div class="modal-dialog">
 			<div class="loginmodal-container">
-				<h1>Login </h1><br>
+			
+			<div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">LOGIN</h4>
+            </div>
+			<div class="modal-body">
+	
 					<form>
 						<input type="email" name="userEmail" placeholder="Your Email">
 						<input type="password" name="userPassword" placeholder="Password">
+						
+						<div class="form-group">
+								<label for="role" class="col-sm-2 control-label">Role</label>
+								<div class="col-sm-10">
+								<input type="radio" name="role" value="Author">Author <br>
+                                <input type="radio" name="role" value="Publisher">Publisher <br>
+                                <input type="radio" name="role" value="Editor">Editor <br>
+								
+								</div>
+							</div>
+						
+						
 						<input type="submit" name="login" class="login loginmodal-submit" value="Login">
 					</form>
 					
 					<div class="login-help">
 						<a href="#">Forgot Password?</a>
 					</div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-					<div class="modal-body">
-						<form class="form-horizontal" role="form">
-							
-							<div class="form-group">
-								<label for="firstName" class="col-sm-2 control-label">First Name</label>
+         </div>
+		</div>
+	</div>
+	</div>
+	
+	-->
+<div id="signup-modal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">×</button>
+<h4 class="modal-title">Sign Up</h4>
+</div>
+<div class="modal-body">
+<p><input type="text" class="form-control" id="firstname" placeholder="First Name"></p>
+<p><input type="text" class="form-control" id="lastname" placeholder="Last Name"></p>
+<p><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></p>
+<p><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></p>
+<div class="form-group">
+<label for="role" class="col-sm-2 control-label">Role</label>
+<div class="col-sm-10">
+<label class="radio-inline">
+<input type="radio" name="role" value="Author">Author <br>
+</label>
+<label class="radio-inline">
+<input type="radio" name="role" value="Publisher">Publisher <br>
+</label>
+<label class="radio-inline">
+<input type="radio" name="role" value="Editor">Editor <br>
+</label>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-primary">Sign Up</button>
+</div>
+</div>
+</div>
+</div>
+	
+	<!--
+	
+	
+	<div class="modal fade" id="signup-modal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="loginmodal-container">
+			
+						<div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">SIGN UP</h4>
+            </div>
+		<div class="modal-body">
+					<form>
+					<div class="form-group">
+								<label for="firstname" class="col-sm-2 control-label">First Name</label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter Your First Name">
+									<input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter your First name">
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="lastName" class="col-sm-2 control-label">Last Name</label>
+					        <div class="form-group">
+								<label for="lastname" class="col-sm-2 control-label">Last Name</label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Your Last Name">
+									<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter your Last name">
 								</div>
 							</div>
-							
-							
-							<div class="form-group">
+					
+					
+					
+					
+						<div class="form-group">
 								<label for="emailid" class="col-sm-2 control-label">Email</label>
 								<div class="col-sm-10">
 									<input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
@@ -117,7 +228,6 @@
 								</div>
 							</div>
 							
-							
 							<div class="form-group">
 								<label for="password" class="col-sm-2 control-label">Password</label>
 								<div class="col-sm-10">
@@ -126,22 +236,7 @@
 							</div>
 							
 							
-						</form>
-=======
-=======
->>>>>>> upstream/master
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="signup-modal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-		<div class="modal-dialog">
-			<div class="loginmodal-container">
-				<h1>Sign up </h1><br>
-					<form>
-						
-						<input type="email" name="userEmail" placeholder="Your Email">
-						<input type="password" name="userPassword" placeholder="Password">
-						<input type="submit" name="login" class="login loginmodal-submit" value="signup">
+						<input type="submit" name="login" class="login loginmodal-submit" value="Sign Up">
 						      
 					</form>
 					
@@ -149,7 +244,9 @@
 			</div>
 		</div>
 	</div>
+	</div>
 	
+	-->
 	<div class="container-fluid">
 		<div class="row">
 			
@@ -167,10 +264,6 @@
 						<input id="email" name="email" type="text" placeholder="Enter Your Email"
 							class="form-control input-md" required>
 						</div>
-<<<<<<< HEAD
->>>>>>> upstream/master
-=======
->>>>>>> upstream/master
 					</div>
 
 					<!-- Text input-->
