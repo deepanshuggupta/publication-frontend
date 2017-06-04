@@ -104,3 +104,22 @@
 .login-help{
   font-size: 12px;
 }
+
+
+/* footer-------*/
+footer {
+    background-color: #303030 ;
+	color:#F8F8F8 ;
+	
+	
+}
+footer a{
+	color:#F8F8F8 ;
+}
+
+footer a:hover{
+	color:#F8F8F8 ;
+}
+footer a:visited{
+	color:#F8F8F8 ;
+}
