@@ -1,6 +1,7 @@
 .nav-heading > h1 > a{
-	color:white;
+	color:gray;
 	text-decoration: none;
+	font-weight:700;
 }
 .navbar .navbar-nav > li > a {
   
