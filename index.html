@@ -26,128 +26,58 @@
 
 <body>
 	<header>
-		<div class="container-fluid">
-			<div class="row">
-				<nav class="navbar navbar-default navber-fixed-top" role="navigation">
-					<div class="container-fluid">
+	
+		
+	
+	
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="container-fluid"  style="background-color:#ed5c5a;">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						    aria-expanded="false" aria-controls="navbar" data-target="#navbar">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						  </button>
-						  <a class="navbar-brand visible-xs-inline-block" href="index.html">Company Name</a>
-						</div>
-
+						 <div class="container">
+	                      <div style="padding-top:10px;">
+                          <h2 style="color:#ffffff;font-family:georgia;font-size:3em;"><b><i> Publication Portal</i></b></h2>
+	  
+	                      </div>
+	                      <div style="padding-top:30px;">
+	                      </div>
+                          </div> 
 						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="container">
 						<div class="collapse navbar-collapse " id="navbar">
 							<ul class="nav navbar-nav js-nav-add-active-class">
-								<li><a href="/index.html">Home</a></li>
-								<li><a href="#aboutus">About Us</a></li>
-								<li><a href="#authors">Authors</a></li>
-								<li><a href="#editors">Editors</a></li>
-								<li><a href="#contactus">Contact Us</a></li>
+								<li><a href="/index.html" style="color:#ffffff;"><h4>Home</h4></a></li>
+								<li><a href="#aboutus" style="color:#ffffff;"><h4>About Us</h4></a></li>
+								<li><a href="#authors" style="color:#ffffff;"><h4>Authors</h4></a></li>
+								<li><a href="#editors" style="color:#ffffff;"><h4>Editors</h4></a></li>
+								<li><a href="#contactus" style="color:#ffffff;"><h4>Contact Us</h4></a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<a data-toggle="modal" data-target="#login-modal">Login</a>
+									<a data-toggle="modal" data-target="#login-modal" style="color:#ffffff;"><h4>Login</h4></a>
 								</li>
 								<li>
-									<a data-toggle="modal" data-target="#signup-modal">Sign Up</a>
+									<a data-toggle="modal" data-target="#signup-modal" style="color:#ffffff;"><h4>Sign Up</h4></a>
 								</li>
 							</ul>
 						</div><!-- /.navbar-collapse -->
 					</div>
+					</div>
 				</nav>
-			</div>
-		</div>
+			
 	
 	</header>
 		
 		
-<!--login modal start-->		
-<div id="login-modal" class="modal fade" role="dialog">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal">×</button>
-<h4 class="modal-title">LOGIN</h4>
-</div>
-<div class="modal-body">
-<p><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></p>
-<p><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></p>
+	
 
-<div class="form-group">
-<label for="role" class="col-sm-2 control-label">Role</label>
-<div class="col-sm-10">
-<label class="radio-inline">
-<input type="radio" name="role" value="Author">Author <br>
-</label>
-<label class="radio-inline">
-<input type="radio" name="role" value="Publisher">Publisher <br>
-</label>
-<label class="radio-inline">
-<input type="radio" name="role" value="Editor">Editor <br>
-</label>
-</div>
-</div>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-primary">Login</button>
-<span style="color:blue;">Forgot Password?</span>
-</div>
-
-</div>
-</div>
-</div>	
-<!--login modal end-->		
-
-		
-<!--signup modal-->		
-<div id="signup-modal" class="modal fade" role="dialog">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal">×</button>
-<h4 class="modal-title">Sign Up</h4>
-</div>
-<div class="modal-body">
-<p><input type="text" class="form-control" id="firstname" placeholder="First Name"></p>
-<p><input type="text" class="form-control" id="lastname" placeholder="Last Name"></p>
-<p><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></p>
-<p><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></p>
-<div class="form-group">
-<label for="role" class="col-sm-2 control-label">Role</label>
-<div class="col-sm-10">
-<label class="radio-inline">
-<input type="radio" name="role" value="Author">Author <br>
-</label>
-<label class="radio-inline">
-<input type="radio" name="role" value="Publisher">Publisher <br>
-</label>
-<label class="radio-inline">
-<input type="radio" name="role" value="Editor">Editor <br>
-</label>
-</div>
-</div>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-primary">Sign Up</button>
-</div>
-</div>
-</div>
-</div>
-<!--signup modal end-->	
-
+	
 	
 		
 		
 	<div class="modal fade" id="login-modal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     	<div class="modal-dialog">
 			<div class="loginmodal-container">
+			    <button type="button" class="close" data-dismiss="modal">×</button>
 				<h1>Login </h1><br>
 					<form>
 						<input type="email" name="userEmail" placeholder="Your Email">
@@ -178,6 +108,7 @@
 	<div class="modal fade" id="signup-modal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     	<div class="modal-dialog">
 			<div class="loginmodal-container">
+			    <button type="button" class="close" data-dismiss="modal">×</button>
 				<h1>Register </h1><br>
 					<form>
 						<input type="text" name="firstName" placeholder="First Name">
@@ -263,67 +194,26 @@
 				
 			
 		</div>
-		
-		
-		<div class="row" id= "browsebyjournal">
-		<h1 style="font-weight: 700;">Browse by Journal</h1>
-		<div class="col-sm-3" style="padding-top:50px;">
-        <img src="health.jpg" class="img-circle" style="border-radius:50%;border:1px solid gray;"><br>
-        <h3 style="padding-left:70px;">Health</h3><br>
-		<ul>
-		<li>International Journal of blablablablablablahhigabjfbasfkabfk</li>
-		<li>International Journal of blablablablablabla</li>
-		<li>International Journal of blablablablablabla</li>
-		<li>International Journal of blablablablablabla</li>
-		<a href="#">Read more...</a>
-		</ul>
-        </div>
-		<div class="col-sm-3" style="padding-top:50px;">
-        <img src="computer.jpg" class="img-circle" style="border-radius:50%;border:1px solid gray;" /><br>
-        <h3 style="padding-left:45px;">Computer Science</h3><br>
-		<ul>
-		<li>International Journal of blablablablablablahhigabjfbasfkabfk</li>
-		<li>International Journal of blablablablablabla</li>
-		<li>International Journal of blablablablablabla</li>
-		<li>International Journal of blablablablablabla</li>
-		<a href="#">Read more...</a>
-		</ul>    
-        </div>
-        <div class="col-sm-3" style="padding-top:50px;">
-        <img src="chemistry.jpg" class="img-circle" style="border-radius:50%;border:1px solid gray;" /><br>
-        <h3 style="padding-left:70px;">Chemistry</h3><br>
-		<ul>
-		<li>International Journal of blablablablablablahhigabjfbasfkabfk</li>
-		<li>International Journal of blablablablablabla</li>
-		<li>International Journal of blablablablablabla</li>
-		<li>International Journal of blablablablablabla</li>
-		<a href="#">Read more...</a>
-		</ul>       
-        </div>
-		<div class="col-sm-3" style="padding-top:50px;">
-        <img src="commerce.jpg" class="img-circle" style="border-radius:50%;border:1px solid gray;" /><br>
-        <h3 style="padding-left:70px;">Commerce</h3><br>
-		<ul>
-		<li>International Journal of blablablablablablahhigabjfbasfkabfk</li>
-		<li>International Journal of blablablablablabla</li>
-		<li>International Journal of blablablablablabla</li>
-		<li>International Journal of blablablablablabla</li>
-		<a href="#">Read more...</a>
-		</ul>        
-        </div>
-		
+
 		
 		
 		
 		
 		<div class="row" id="editors" style="margin-top:50px;">
-			<legend><center><h1 style="font-weight: 700; font-size:60px;">Editors</h1></center></legend>
+			<legend><center><h1 style="font-weight: 700; font-size:50px;">Browse by Journals</h1></center></legend>
 			<div class="card-custom">
 				<div class="col-sm-6 col-md-4 col-lg-3 ">
 					<div class="card">
-						<img class="card-img-top" src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif">
+						<img class="card-img-top" src="health.jpg">
 						<p class="card-block">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit culpa veritatis placeat earum, dolorum asperiores, delectus dolore voluptatibus, at magnam nobis!
+							<h3 style="padding-left:70px;">Health</h3><br>
+	                    	<ul>
+		                    <li>International Journal of blablablablablablahhigabjfbasfkabfk</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <a href="#">Read more...</a>
+		                    </ul>
 						</p>
 					</div>
 				</div>
@@ -331,9 +221,16 @@
 			<div class="card-custom">
 				<div class="col-sm-6 col-md-4 col-lg-3 ">
 					<div class="card">
-						<img class="card-img-top" src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif">
+						<img class="card-img-top" src="computer.jpg">
 						<p class="card-block">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit culpa veritatis placeat earum, dolorum asperiores, delectus dolore voluptatibus, at magnam nobis!
+						<h3 style="padding-left:70px;">Computer Science</h3><br>
+	                    	<ul>
+		                    <li>International Journal of blablablablablablahhigabjfbasfkabfk</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <a href="#">Read more...</a>
+		                    </ul>	
 						</p>
 					</div>
 				</div>
@@ -341,9 +238,16 @@
 			<div class="card-custom">
 				<div class="col-sm-6 col-md-4 col-lg-3 ">
 					<div class="card">
-						<img class="card-img-top" src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif">
+						<img class="card-img-top" src="chemistry.jpg">
 						<p class="card-block">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit culpa veritatis placeat earum, dolorum asperiores, delectus dolore voluptatibus, at magnam nobis!
+						<h3 style="padding-left:70px;">Chemistry</h3><br>
+	                    	<ul>
+		                    <li>International Journal of blablablablablablahhigabjfbasfkabfk</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <a href="#">Read more...</a>
+		                    </ul>
 						</p>
 					</div>
 				</div>
@@ -351,25 +255,21 @@
 			<div class="card-custom">
 				<div class="col-sm-6 col-md-4 col-lg-3 ">
 					<div class="card">
-						<img class="card-img-top" src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif">
+						<img class="card-img-top" src="commerce.jpg">
 						<p class="card-block">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit culpa veritatis placeat earum, dolorum asperiores, delectus dolore voluptatibus, at magnam nobis!
+						<h3 style="padding-left:70px;">Commerce</h3><br>
+	                    	<ul>
+		                    <li>International Journal of blablablablablablahhigabjfbasfkabfk</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <li>International Journal of blablablablablabla</li>
+		                    <a href="#">Read more...</a>
+		                    </ul>
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="card-custom">
-				<div class="col-sm-6 col-md-4 col-lg-3 ">
-					<div class="card">
-						<img class="card-img-top" src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif">
-						<p class="card-block">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit culpa veritatis placeat earum, dolorum asperiores, delectus dolore voluptatibus, at magnam nobis!
-						</p>
-					</div>
-				</div>
-			</div>
-			
-		</div>
+		</div>	
 	
 		<div class="row" style="background-color: #ed5c5a;" id= "contactus">
 			<div class="col-sm-offset-3 col-sm-6" style="margin-top:30px;">
