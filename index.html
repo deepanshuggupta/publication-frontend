@@ -68,184 +68,66 @@
 	</header>
 		
 		
-		
-<div id="login-modal" class="modal fade" role="dialog">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal">×</button>
-<h4 class="modal-title">LOGIN</h4>
-</div>
-<div class="modal-body">
-<p><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></p>
-<p><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></p>
-
-<div class="form-group">
-<label for="role" class="col-sm-2 control-label">Role</label>
-<div class="col-sm-10">
-<label class="radio-inline">
-<input type="radio" name="role" value="Author">Author <br>
-</label>
-<label class="radio-inline">
-<input type="radio" name="role" value="Publisher">Publisher <br>
-</label>
-<label class="radio-inline">
-<input type="radio" name="role" value="Editor">Editor <br>
-</label>
-</div>
-</div>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-primary">Login</button>
-<span style="color:blue;">Forgot Password?</span>
-</div>
-
-</div>
-</div>
-</div>	
-		
-
-		
-		
-		
-		<!--
-	
 	<div class="modal fade" id="login-modal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     	<div class="modal-dialog">
 			<div class="loginmodal-container">
-			
-			<div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal">×</button>
-                <h4 class="modal-title">LOGIN</h4>
-            </div>
-			<div class="modal-body">
-	
+				<h1>Login </h1><br>
 					<form>
 						<input type="email" name="userEmail" placeholder="Your Email">
-						<input type="password" name="userPassword" placeholder="Password">
-						
+						<input type="password" name="userPassword" placeholder="Password"><hr>
+						<center><p style="font-size: 14px;color: #666;">Account Type</p></center>
 						<div class="form-group">
-								<label for="role" class="col-sm-2 control-label">Role</label>
-								<div class="col-sm-10">
-								<input type="radio" name="role" value="Author">Author <br>
-                                <input type="radio" name="role" value="Publisher">Publisher <br>
-                                <input type="radio" name="role" value="Editor">Editor <br>
-								
-								</div>
-							</div>
-						
-						
+							<label class="radio-inline">
+								<input type="radio" name="role" value="Author">Author 
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="role" value="Publisher">Publisher 
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="role" value="Editor">Editor 
+							</label>
+							
+						</div>
 						<input type="submit" name="login" class="login loginmodal-submit" value="Login">
 					</form>
 					
 					<div class="login-help">
 						<a href="#">Forgot Password?</a>
 					</div>
-         </div>
+			</div>
 		</div>
 	</div>
-	</div>
-	
-	-->
-<div id="signup-modal" class="modal fade" role="dialog">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal">×</button>
-<h4 class="modal-title">Sign Up</h4>
-</div>
-<div class="modal-body">
-<p><input type="text" class="form-control" id="firstname" placeholder="First Name"></p>
-<p><input type="text" class="form-control" id="lastname" placeholder="Last Name"></p>
-<p><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></p>
-<p><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></p>
-<div class="form-group">
-<label for="role" class="col-sm-2 control-label">Role</label>
-<div class="col-sm-10">
-<label class="radio-inline">
-<input type="radio" name="role" value="Author">Author <br>
-</label>
-<label class="radio-inline">
-<input type="radio" name="role" value="Publisher">Publisher <br>
-</label>
-<label class="radio-inline">
-<input type="radio" name="role" value="Editor">Editor <br>
-</label>
-</div>
-</div>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-primary">Sign Up</button>
-</div>
-</div>
-</div>
-</div>
-	
-	<!--
-	
-	
+<
 	<div class="modal fade" id="signup-modal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-		<div class="modal-dialog">
+    	<div class="modal-dialog">
 			<div class="loginmodal-container">
-			
-						<div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal">×</button>
-                <h4 class="modal-title">SIGN UP</h4>
-            </div>
-		<div class="modal-body">
+				<h1>Login </h1><br>
 					<form>
-					<div class="form-group">
-								<label for="firstname" class="col-sm-2 control-label">First Name</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter your First name">
-								</div>
-							</div>
-					        <div class="form-group">
-								<label for="lastname" class="col-sm-2 control-label">Last Name</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter your Last name">
-								</div>
-							</div>
-					
-					
-					
-					
+						<input type="text" name="firstName" placeholder="First Name">
+						<input type="text" name="lastName" placeholder="Last Name">
+						<input type="email" name="userEmail" placeholder="Your Email">
+						<input type="password" name="userPassword" placeholder="Password"><hr>
+						<center><p style="font-size: 14px;color: #666;">Account Type</p></center>
 						<div class="form-group">
-								<label for="emailid" class="col-sm-2 control-label">Email</label>
-								<div class="col-sm-10">
-									<input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
-								</div>
-							</div>
+							<label class="radio-inline">
+								<input type="radio" name="role" value="Author">Author 
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="role" value="Publisher">Publisher 
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="role" value="Editor">Editor 
+							</label>
 							
-							<div class="form-group">
-								<label for="role" class="col-sm-2 control-label">Role</label>
-								<div class="col-sm-10">
-								<input type="radio" name="role" value="Author">Author <br>
-                                <input type="radio" name="role" value="Publisher">Publisher <br>
-                                <input type="radio" name="role" value="Editor">Editor <br>
-								
-								</div>
-							</div>
-							
-							<div class="form-group">
-								<label for="password" class="col-sm-2 control-label">Password</label>
-								<div class="col-sm-10">
-									<input type="password" class="form-control" id="password" name="password" placeholder="Password">
-								</div>
-							</div>
-							
-							
-						<input type="submit" name="login" class="login loginmodal-submit" value="Sign Up">
-						      
+						</div>
+						<input type="submit" name="signup" class="login loginmodal-submit" value="signup">
 					</form>
 					
 					
 			</div>
 		</div>
 	</div>
-	</div>
 	
-	-->
 	<div class="container-fluid">
 		<div class="row" style="margin-top:-20px;">
 		
