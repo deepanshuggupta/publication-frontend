@@ -2,88 +2,6 @@
 <html lang="en">
 
 <head>
- <script type="text/javascript">
-      function myFunction() {
-        var x = document.getElementById("demo");
-		x.style.display = "block"; 
-        var y = document.getElementById("demo1");
-		y.style.display = "none";
-		var z = document.getElementById("demo2");
-		z.style.display = "block";
-      }
-	   function myFunction1() {
-        var x = document.getElementById("demo3");
-		x.style.display = "block"; 
-        var y = document.getElementById("demo2");
-		y.style.display = "none";
-		var z = document.getElementById("demo4");
-		z.style.display = "block";
-      }
-	  	   function myFunction2() {
-        var x = document.getElementById("demo5");
-		x.style.display = "block"; 
-        var y = document.getElementById("demo4");
-		y.style.display = "none";
-		var z = document.getElementById("demo6");
-		z.style.display = "block";
-      }
-	  
-	  	   function myFunction3() {
-        var x = document.getElementById("demo7");
-		x.style.display = "block"; 
-        var y = document.getElementById("demo6");
-		y.style.display = "none";
-		var z = document.getElementById("demo8");
-		z.style.display = "block";
-      }
-	  	  	   function myFunction4() {
-        var x = document.getElementById("demo9");
-		x.style.display = "block"; 
-        var y = document.getElementById("demo8");
-		y.style.display = "none";
-		var z = document.getElementById("demo10");
-		z.style.display = "block";
-      }
-	  	  	  	   function myFunction5() {
-        var x = document.getElementById("demo11");
-		x.style.display = "block"; 
-        var y = document.getElementById("demo10");
-		y.style.display = "none";
-		var z = document.getElementById("demo12");
-		z.style.display = "block";
-      }
-	  	  	   function myFunction6() {
-        var x = document.getElementById("demo13");
-		x.style.display = "block"; 
-        var y = document.getElementById("demo12");
-		y.style.display = "none";
-		var z = document.getElementById("demo14");
-		z.style.display = "block";
-      }
-	  	  	   function myFunction7() {
-        var x = document.getElementById("demo15");
-		x.style.display = "block"; 
-        var y = document.getElementById("demo14");
-		y.style.display = "none";
-		var z = document.getElementById("demo16");
-		z.style.display = "block";
-      }
-	  	  	   function myFunction8() {
-        var x = document.getElementById("demo17");
-		x.style.display = "block"; 
-        var y = document.getElementById("demo16");
-		y.style.display = "none";
-		var z = document.getElementById("demo18");
-		z.style.display = "block";
-      }
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -101,14 +19,6 @@
 
     <!-- Custom CSS -->
     <link href="styles/custom-Styles.css" rel="stylesheet">
-
-
-	
-	
-	
-	
-	
-    
 </head>
 
 <body>
@@ -167,269 +77,107 @@
 	
 	</header>
 	
+		<div class="container-fluid">
 	
-	
-	<div class="container-fluid">
-	
-		<div class="row" id= "submitjournal">
-			<div class="col-sm-offset-3 col-sm-6" style="margin-top:30px;">
-			<legend><center><h1 style="font-weight:500;">Submit Manuscripts</h1></center></legend>
+			<div class="row">
+				<div class="col-sm-offset-3 col-sm-6" style="margin-top:30px;">
+					<legend><center><h1 style="font-weight:500;">Submit Manuscripts</h1></center></legend>
+				</div>
 			</div>
-			<div class="col-sm-3">
+			<div class="row" id="submitjournal">
+				<div class=" col-sm-10">
+					<form class="form-horizontal" role="form">
+						<legend><h3 style="font-weight:500;margin-top:20px;"><b>Submission Author(s)</b></h3></legend>
+						<h2 style="margin-bottom:30px;"> First Author</h2>
+						<div class="form-group">
+							
+							<label for="firstauthortitle" class="col-sm-2 control-label">Title</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="firstauthortitle" name="firstauthortitle" placeholder="Enter your Title">
+							</div>
+							
+						</div>
+						<div class="form-group">
+							
+							<label for="firstauthorname" class="col-sm-2 control-label">Name</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="firstauthorname" name="firstauthorname" placeholder="Enter your Full name">
+							</div>
+							
+						</div>
+						<div class="form-group">
+							
+							<label for="deptaddfirst" class="col-sm-2 control-label">Department</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="deptaddfirst" name="deptaddfirst" placeholder="Enter your Department name">
+							</div>
+							
+						</div>
+						<div class="form-group">
+							
+							<label for="firstauthoremail" class="col-sm-2 control-label">Email</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="firstauthoremail" name="firstauthoremail" placeholder="Enter your Email">
+							</div>
+							
+						</div>
+						<div class="form-group">
+						   <div class="checkbox col-sm-5 col-sm-offset-2">
+								<label class="checkbox-inline">
+									<input type="checkbox" name="approve" value="">
+									<strong>Corresponding Author?</strong>
+								</label>
+							</div>
+							
+						</div>
+						<div class="form-group" style="margin-top:20px;">
+							<label for="addauthor" class="col-sm-2 control-label">Click To Add More Author</label>
+							<div class=" col-sm-10">
+								<button class="btn btn-primary" id="addauthor">Add </button>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="manTitle" class="col-sm-2 control-label">Manuscript Title</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" id="manTitle" name="manTitle" rows="3"></textarea>
+							</div>
+						
+						</div>
+						<div class="form-group">
+							<label for="manAbstract" class="col-sm-2 control-label">Manuscript Abstract</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" id="manAbstract" name="manAbstract" rows="4"></textarea>
+							</div>
+						
+						</div>
+						<div class="form-group">
+							<label for="manKeyword" class="col-sm-2 control-label">Manuscript Keywords</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" id="manKeyword" name="manKeyword" rows="4" 
+									placeholder="enter comma separated keywords "></textarea>
+							</div>
+						
+						</div>
+						<div class="form-group" style="margin-top:20px;">
+						
+							<label for="uploadFile" class="col-sm-2 control-label">Upload pdf, .doc File</label>
+							<div class="col-sm-10">
+								<input type="file" id="uploadFile" name="uploadFile" hidden accept=".pdf,.doc">
+							</div>
+						
+						</div>
+						<div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+					</form>
+				</div>
 			</div>
-			<div class="col-sm-10">
-				<form>
-	              <fieldset>
-					<div style="margin-top:20px;">
-						<ul><div class="col-sm-10">
-						<li><p style="font-size:20px;"><b>Submission Author(s)</b></p><br>
-						   
-						    <div class="col-sm-4">
-							<b>First Author</b></div><br>
-							<div class="col-sm-6">
-							
-							<input id="firstauthortitle" name="title" type="text" required="true" placeholder="Title">
-							<input id="firstauthorname" name="name" type="text" required="true" placeholder="Enter full name">
-							
-							<input id="deptaddfirst" name="name" type="text" required="true" placeholder="Enter Department address">
-							<input id="firstauthoremail" name="email" type="email" required="true" placeholder="Enter Email Id">
-							<br><div style="margin-top:20px;"><input type="checkbox" name="corresauthor">Corresponding Author
-							</div>
-							<div style="margin-top:20px;">
-							</div>
-							 
-							<div id="demo" style="display:none;">
-							 <div style="padding-left:2px;">
-							<b>Second Author</b></div>
-							<input id="authortitle" name="title" type="text" required="true" placeholder="Title" />
-							<input id="authorname" name="name" type="text" required="true" placeholder="Enter full name" />
-							
-							<input id="deptaddfirst" name="name" type="text" required="true" placeholder="Enter Department address" />
-							<input id="authoremail" name="email" type="email" required="true" placeholder="Enter Email Id" />
-							<br><div style="margin-top:20px;"><input type="checkbox" name="corresauthor">Corresponding Author
-							</div>
-							<div style="margin-top:20px;">
-							</div>
-
-							</div>
-							<button type="button" onclick="myFunction();" id="demo1">Add one more author</button>
-							
-							
-							<div id="demo3" style="display:none;">
-							 <div style="padding-left:2px;">
-							<b>Third Author</b></div>
-							<input id="authortitle" name="title" type="text" required="true" placeholder="Title" />
-							<input id="authorname" name="name" type="text" required="true" placeholder="Enter full name" />
-							
-							<input id="deptaddfirst" name="name" type="text" required="true" placeholder="Enter Department address" />
-							<input id="authoremail" name="email" type="email" required="true" placeholder="Enter Email Id" />
-							<br><div style="margin-top:20px;"><input type="checkbox" name="corresauthor">Corresponding Author
-							</div>
-							<div style="margin-top:20px;">
-							</div>
-
-							</div>							
-							
-							<button type="button" onclick="myFunction1();" id="demo2" style="display:none;">Add one more author</button>
-							
-							
-							<div id="demo5" style="display:none;">
-							 <div style="padding-left:2px;">
-							<b>Fourth Author</b></div>
-							<input id="authortitle" name="title" type="text" required="true" placeholder="Title" />
-							<input id="authorname" name="name" type="text" required="true" placeholder="Enter full name" />
-							
-							<input id="deptaddfirst" name="name" type="text" required="true" placeholder="Enter Department address" />
-							<input id="authoremail" name="email" type="email" required="true" placeholder="Enter Email Id" />
-							<br><div style="margin-top:20px;"><input type="checkbox" name="corresauthor">Corresponding Author
-							</div>
-							<div style="margin-top:20px;">
-							</div>
-
-							</div>	
-							
-							<button type="button" onclick="myFunction2();" id="demo4" style="display:none;">Add one more author</button>
-							
-							<div id="demo7" style="display:none;">
-							 <div style="padding-left:2px;">
-							<b>Fifth Author</b></div>
-							<input id="authortitle" name="title" type="text" required="true" placeholder="Title" />
-							<input id="authorname" name="name" type="text" required="true" placeholder="Enter full name" />
-							
-							<input id="deptaddfirst" name="name" type="text" required="true" placeholder="Enter Department address" />
-							<input id="authoremail" name="email" type="email" required="true" placeholder="Enter Email Id" />
-							<br><div style="margin-top:20px;"><input type="checkbox" name="corresauthor">Corresponding Author
-							</div>
-							<div style="margin-top:20px;">
-							</div>
-
-							</div>	
-							
-							
-							
-							<button type="button" onclick="myFunction3();" id="demo6" style="display:none;">Add one more author</button>
-							
-							
-							
-							<div id="demo9" style="display:none;">
-							 <div style="padding-left:2px;">
-							<b>Sixth Author</b></div>
-							<input id="authortitle" name="title" type="text" required="true" placeholder="Title" />
-							<input id="authorname" name="name" type="text" required="true" placeholder="Enter full name" />
-							
-							<input id="deptaddfirst" name="name" type="text" required="true" placeholder="Enter Department address" />
-							<input id="authoremail" name="email" type="email" required="true" placeholder="Enter Email Id" />
-							<br><div style="margin-top:20px;"><input type="checkbox" name="corresauthor">Corresponding Author
-							</div>
-							<div style="margin-top:20px;">
-							</div>
-
-							</div>	
-		
-							<button type="button" onclick="myFunction4();" id="demo8" style="display:none;">Add one more author</button>
-							
-							
-							<div id="demo11" style="display:none;">
-							 <div style="padding-left:2px;">
-							<b>Seventh Author</b></div>
-							<input id="authortitle" name="title" type="text" required="true" placeholder="Title" />
-							<input id="authorname" name="name" type="text" required="true" placeholder="Enter full name" />
-							
-							<input id="deptaddfirst" name="name" type="text" required="true" placeholder="Enter Department address" />
-							<input id="authoremail" name="email" type="email" required="true" placeholder="Enter Email Id" />
-							<br><div style="margin-top:20px;"><input type="checkbox" name="corresauthor">Corresponding Author
-							</div>
-							<div style="margin-top:20px;">
-							</div>
-
-							</div>	
 				
-							<button type="button" onclick="myFunction5();" id="demo10" style="display:none;">Add one more author</button>
-							
-							<div id="demo13" style="display:none;">
-							 <div style="padding-left:2px;">
-							<b>Eighth Author</b></div>
-							<input id="authortitle" name="title" type="text" required="true" placeholder="Title" />
-							<input id="authorname" name="name" type="text" required="true" placeholder="Enter full name" />
-							
-							<input id="deptaddfirst" name="name" type="text" required="true" placeholder="Enter Department address" />
-							<input id="authoremail" name="email" type="email" required="true" placeholder="Enter Email Id" />
-							<br><div style="margin-top:20px;"><input type="checkbox" name="corresauthor">Corresponding Author
-							</div>
-							<div style="margin-top:20px;">
-							</div>
-
-							</div>
-							
-							
-							<button type="button" onclick="myFunction6();" id="demo12" style="display:none;">Add one more author</button>
-							<div id="demo15" style="display:none;">
-							 <div style="padding-left:2px;">
-							<b>Ninth Author</b></div>
-							<input id="authortitle" name="title" type="text" required="true" placeholder="Title" />
-							<input id="authorname" name="name" type="text" required="true" placeholder="Enter full name" />
-							
-							<input id="deptaddfirst" name="name" type="text" required="true" placeholder="Enter Department address" />
-							<input id="authoremail" name="email" type="email" required="true" placeholder="Enter Email Id" />
-							<br><div style="margin-top:20px;"><input type="checkbox" name="corresauthor">Corresponding Author
-							</div>
-							<div style="margin-top:20px;">
-							</div>
-
-							</div>							
-							
-							
-							
-							
-							<button type="button" onclick="myFunction7();" id="demo14" style="display:none;">Add one more author</button>
-							<div id="demo17" style="display:none;">
-							 <div style="padding-left:2px;">
-							<b>Tenth Author</b></div>
-							<input id="authortitle" name="title" type="text" required="true" placeholder="Title" />
-							<input id="authorname" name="name" type="text" required="true" placeholder="Enter full name" />
-							
-							<input id="deptaddfirst" name="name" type="text" required="true" placeholder="Enter Department address" />
-							<input id="authoremail" name="email" type="email" required="true" placeholder="Enter Email Id" />
-							<br><div style="margin-top:20px;"><input type="checkbox" name="corresauthor">Corresponding Author
-							</div>
-							<div style="margin-top:20px;">
-							</div>
-
-							</div>								
-							
-							
-							
-							
-							
-							
-							
-							<button type="button" onclick="myFunction8();" id="demo16" style="display:none;">Add one more author</button>
-                            <button type="button" onclick="myFunction9();" id="demo18" style="display:none;" disabled>Add one more author</button>
-							
-						    </div>
-							
-						</li>
-						</div>
-						<div class="col-sm-10">
-						<li><p style="font-size:20px;margin-top:20px;"><b>Manuscript Title</b></p><br>
-						
-						<textarea class="form-control" rows="2"></textarea>
-						
-						</li>
-						</div>
-						<div class="col-sm-10">
-						<li><p style="font-size:20px;margin-top:20px;"><b>Manuscript Abstract</b></p><br>
-						
-						<textarea class="form-control" rows="3"></textarea>
-						
-						</li>
-						</div>
-						<div class="col-sm-10">
-						<li><p style="font-size:20px;margin-top:20px;"><b>Manuscript Keywords</b></p><br>
-						
-						<textarea class="form-control" rows="1"></textarea>
-						
-						</li>
-						</div>
-						<div class="col-sm-10" style="margin-top:20px;">
-						<input type="file" name="pic" accept=".pdf,.doc">
-						</div>
-						<div style="margin-top:20px;margin-bottom:10px;" class="col-sm-10">
-							<input type="submit" value="Save and Continue!">
-							</div>
-						
-						</ul>
-						
-					</div>
-			</div>
-	
-	
-	
-				  </fieldset>
-				</form>
 			
 		</div>
-		
-
 	
-	
-	
-	
-	
-	
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 	<footer>
 		<div class="container-fluid">
 			
