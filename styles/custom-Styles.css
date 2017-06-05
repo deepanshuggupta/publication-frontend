@@ -172,4 +172,18 @@ hr.featurette-divider {
 	background-color: #303030;
 	
 }
+
+    
+/*
  
+@media screen and (min-width: 600px) {
+  .vr {
+    visibility: visible;
+	width:1px;
+    background-color:gray;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:100;
+  }
+}*/

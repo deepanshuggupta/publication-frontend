@@ -20,7 +20,7 @@
 
     <!-- Custom CSS -->
     <link href="styles/custom-Styles.css" rel="stylesheet">
-
+	
     
 </head>
 
@@ -79,10 +79,52 @@
 		
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-3" style="background-color:#ed5c5a;margin-top:-20px;">
-				<h1>Contains the filters</h1>
+			<div class="col-sm-3" style="margin-top:20px;">
+				
+				<form role="form">
+					<label for="select_category">Category</label>
+					<div id="categoryOptions">
+                        <select data-placeholder="Choose category" id="select_category"
+							name="select_category" class="chosen-select form-control" tabindex="1">
+							<option value=""> Choose category </option>
+							<option value="engineering">Engineering</option>
+							<option value="mba">MBA</option>
+							<option value="computer%20science">Computer Science</option>
+							<option value="humanities">Humanities</option>
+							<option value="media">Media</option>
+							<option value="creative%20writing">Creative Writing</option>
+							<option value="graphic%20design">Graphic Design</option>
+							<option value="finance">Finance</option>
+							<option value="civil">Civil Engineering</option>
+							<option value="chemical">Chemical Engineering</option>
+						</select>
+					</div>
+					<label for="select_subcategory"style="margin-top:20px;"> Sub Category</label>
+					<div id="subcategoryOptions" style="margin-bottom:20px; ">
+                        <select data-placeholder="Choose category" id="select_subcategory"
+							name="select_subcategory" class="chosen-select form-control" tabindex="1">
+							<option value=""> Choose category </option>
+							<option value="engineering">Engineering</option>
+							<option value="mba">MBA</option>
+							<option value="computer%20science">Computer Science</option>
+							<option value="humanities">Humanities</option>
+							<option value="media">Media</option>
+							<option value="creative%20writing">Creative Writing</option>
+							<option value="graphic%20design">Graphic Design</option>
+							<option value="finance">Finance</option>
+							<option value="civil">Civil Engineering</option>
+							<option value="chemical">Chemical Engineering</option>
+						</select>
+					</div>
+					<a class="btn btn-md btn-primary" href ="#">Apply</a>
+					<hr>
+				</form>
 				
 			</div>
+			<!--<div class="col-sm-1 " style="min-height:600px;">
+					<div class="vr">&nbsp;</div>
+			</div>-->
+			
 			<div class="col-sm-offset-1 col-sm-7" style="min-height:400px;">
 				<h1>Cotains the journals list</h1>
 				<hr>
