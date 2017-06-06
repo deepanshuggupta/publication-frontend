@@ -187,3 +187,9 @@ hr.featurette-divider {
     left:100;
   }
 }*/
+
+#user_dash  a{
+	text-decoration:none;
+	color: white;
+	
+}
