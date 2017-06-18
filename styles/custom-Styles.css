@@ -173,23 +173,18 @@ hr.featurette-divider {
 	
 }
 
-    
-/*
- 
-@media screen and (min-width: 600px) {
-  .vr {
-    visibility: visible;
-	width:1px;
-    background-color:gray;
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:100;
-  }
-}*/
+  
 
 #user_dash  a{
 	text-decoration:none;
 	color: white;
 	
 }
+@media screen and (max-width: 600px) {
+  #headerbar{
+    visibility: hidden;
+    display: none;
+  }
+}
+
+      
