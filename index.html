@@ -55,15 +55,15 @@
 							<ul class="nav navbar-nav ">
 								<li><a href="index.html">Home</a></li>
 								<li><a href="#">About Us</a></li>
-								<li><a href="#">Publishers</a></li>
-								<li><a href="#">Contact Us</a></li>
+								<li><a href="publishers.html">Publishers</a></li>
+								<li><a href="contactus.html">Contact Us</a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<a href="#">Login</a>
+									<a href="login.html">Login</a>
 								</li>
 								<li>
-									<a href="#">Sign Up</a>
+									<a href="signup.html">Sign Up</a>
 
 								</li>
 							</ul>
@@ -77,74 +77,7 @@
 	</header>
 		
 	
-
 	
-	
-		
-		
-	<div class="modal fade" id="login-modal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    	<div class="modal-dialog">
-			<div class="loginmodal-container">
-			    <button type="button" class="close" data-dismiss="modal">×</button>
-
-
-				<h1>Login </h1><br>
-					<form>
-						<input type="email" name="userEmail" placeholder="Your Email">
-						<input type="password" name="userPassword" placeholder="Password"><hr>
-						<center><p style="font-size: 14px;color: #666;">Account Type</p></center>
-						<div class="form-group">
-							<label class="radio-inline">
-								<input type="radio" name="role" value="Author">Author 
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="role" value="Publisher">Publisher 
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="role" value="Editor">Editor 
-							</label>
-							
-						</div>
-						<input type="submit" name="login" class="login loginmodal-submit" value="Login">
-					</form>
-					
-					<div class="login-help">
-						<a href="#">Forgot Password?</a>
-					</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="signup-modal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    	<div class="modal-dialog">
-			<div class="loginmodal-container">
-
-			    <button type="button" class="close" data-dismiss="modal">×</button>
-				<h1>Register </h1><br>
-					<form>
-						<input type="text" name="firstName" placeholder="First Name">
-						<input type="text" name="lastName" placeholder="Last Name">
-						<input type="email" name="userEmail" placeholder="Your Email">
-						<input type="password" name="userPassword" placeholder="Password"><hr>
-						<center><p style="font-size: 14px;color: #666;">Account Type</p></center>
-						<div class="form-group">
-							<label class="radio-inline">
-								<input type="radio" name="role" value="Author">Author 
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="role" value="Publisher">Publisher 
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="role" value="Editor">Editor 
-							</label>
-							
-						</div>
-						<input type="submit" name="signup" class="login loginmodal-submit" value="Sign Up">
-					</form>
-					
-					
-			</div>
-		</div>
-	</div>
 	
 	<div class="container-fluid">
 		<div class="row" style="margin-top:-20px;">
@@ -155,32 +88,36 @@
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
 					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
 				</ol>
 
 					<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 
 					<div class="item active">
-						<img src="images\4.jpg" alt="Los Angeles" style="width:100%;">
+						<img src="images\c3.jpg" alt="Los Angeles" style="width:100%;">
 						<div class="carousel-caption">
-							<h3>Los Angeles</h3>
-							<p>LA is always so much fun!</p>
+							
 						</div>
 					</div>
 
 					<div class="item">
-						<img src="images\3.png" alt="Chicago" style="width:100%;">
+						<img src="images\c2.jpg" alt="Chicago" style="width:100%;">
 						<div class="carousel-caption">
-							<h3>Chicago</h3>
-							<p>Thank you, Chicago!</p>
+							
 						</div>
 					</div>
 				
 					<div class="item">
-						<img src="images\4.jpg" alt="New York" style="width:100%;">
+						<img src="images\c1.jpg" alt="New York" style="width:100%;">
 						<div class="carousel-caption">
-							<h3>New York</h3>
-							<p>We love the Big Apple!</p>
+							
+						</div>
+					</div>
+					<div class="item">
+						<img src="images\c4.jpg" alt="New York" style="width:100%;">
+						<div class="carousel-caption">
+							
 						</div>
 					</div>
 			  
@@ -198,17 +135,7 @@
 			</div>
 			
 		</div>
-		
-		<div class="row" id="authors" style="margin-top:50px;">
-			<legend><center><h1 style="font-weight: 700; font-size:40px;">What They Said</h1></center></legend>
-				
-			
-		</div>
-
-		
-		
-		
-		
+	
 		<div class="row" id="editors" style="margin-top:50px;">
 
 			<legend><center><h1 style="font-weight: 700; font-size:50px;">Journals</h1></center></legend>
@@ -283,51 +210,7 @@
 			</div>
 		</div>	
 	
-		<div class="row" style="background-color: #ed5c5a;" id= "contactus">
-			<div class="col-sm-offset-3 col-sm-6" style="margin-top:30px;">
-				<form class="form-horizontal ">
-					<fieldset>
-					<!-- Form Name -->
-					<legend><center><h1 style="color: #ffffff;font-weight: 700;">Contact Us</h1></center></legend>
-					<!-- Text input-->
-					<div class="form-group">
-						<div style="margin-top:20px;">
-						<input id="email" name="email" type="text" placeholder="Enter Your Email"
-							class="form-control input-md" required>
-						</div>
-					</div>
-
-					<!-- Text input-->
-					<div class="form-group">
-						
-						<div style="margin-top:10px;">
-							<input id="textinput" name="textinput" type="text" placeholder="Enter Your Name" 
-							class="form-control input-md" required>
-						
-						</div>
-					</div>
-
-					<!-- Textarea -->
-					<div class="form-group">
-						
-						<div style="margin-top:10px;">                     
-							<textarea class="form-control" id="meassage" name="meassage" maxlength="140" rows="7" 
-							placeholder="Enter Your message" ></textarea>
-						</div>
-					</div>
-
-					<!-- Button -->
-					<div class="form-group">
-						
-						<div style="margin-top:10px;">
-							<button id="submitbutton" name="submitbutton" class="btn btn-primary">Submit</button>
-						</div>
-					</div>
-
-					</fieldset>
-				</form>
-			</div>
-		</div>
+		
 		
 
 	</div>

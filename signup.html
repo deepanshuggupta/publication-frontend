@@ -20,7 +20,34 @@
 
     <!-- Custom CSS -->
     <link href="styles/custom-Styles.css" rel="stylesheet">
-    
+    <style>
+    	.form-control{
+    		border-radius:0px;
+    		border:1px solid #EDEDED;
+		}
+		.header-title{
+		    text-align: center;
+		    color:#00bfff;
+		}
+		.form-control:focus{
+		    border:1px solid #00bfff;
+		}
+		.btn-send
+        {
+        	border-radius: 0px;
+        	border:1px solid #00bfff;
+        	background:#00bfff;
+        	color:#fff; 
+        }
+
+        .btn-send:hover
+        {
+        	border:1px solid #00bfff;
+        	background:#fff;
+        	color:#00bfff;
+        	transition:background 0.5s;   
+        }
+        </style>
 </head>
 
 <body>
@@ -54,15 +81,15 @@
 							<ul class="nav navbar-nav ">
 								<li><a href="index.html">Home</a></li>
 								<li><a href="#">About Us</a></li>
-								<li><a href="#">Publishers</a></li>
-								<li><a href="#">Contact Us</a></li>
+								<li><a href="publishers.html">Publishers</a></li>
+								<li><a href="contactus.html">Contact Us</a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<a href="#">Login</a>
+									<a href="login.html">Login</a>
 								</li>
 								<li>
-									<a href="#">Sign Up</a>
+									<a href="signup.html">Sign Up</a>
 
 								</li>
 							</ul>
@@ -80,8 +107,8 @@
 		<div class="row " style="margin-bottom:30px; margin-top:30px;">
         	<div class="col-md-4 col-md-offset-7">
 	            <div class="panel panel-default">
-	                <div class="panel-heading">
-	                    <span class="glyphicon glyphicon-lock"></span> Register</div>
+	                <div class="panel-heading header-title">
+	                    <span class="glyphicon glyphicon-lock "></span> Register</div>
 	                <div class="panel-body">
 	                    <form class="form-horizontal" role="form">
 	                    	<div class="form-group">
@@ -123,7 +150,7 @@
 
 		                    <div class="form-group ">
 		                        <div class="col-sm-offset-3 col-sm-9">
-		                            <button type="submit" class="btn btn-success btn-sm">
+		                            <button type="submit" class="btn btn-success btn-sm btn-send">
 		                                Register</button>
 		                                
 		                        </div>
@@ -131,7 +158,7 @@
 	                    </form>
 	                </div>
 	                <div class="panel-footer">
-	                    Already a user? <a href="#">Login here</a>
+	                    Already a user? <a href="login.html">Login here</a>
 	                </div>
 	            </div>
 	        </div>
